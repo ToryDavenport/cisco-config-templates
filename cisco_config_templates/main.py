@@ -13,7 +13,7 @@ hostname = data['Hostname:']
 
 
 for device in range(0,25):
-	os.system(f"touch ./configs/output/config_{hostname[device]}.cfg")
+	os.system(f"touch ./configs/output/config_{hostname[device]}.txt")
 	file = open(f"./configs/output/config_{hostname[device]}.cfg", "w")
 	env = Environment(loader=file_loader)
 	template = env.get_template('./configs/Gold_Standard.txt')
