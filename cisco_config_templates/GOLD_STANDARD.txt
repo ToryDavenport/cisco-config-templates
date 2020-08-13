@@ -1,0 +1,78 @@
+!
+hostname {{ hostname }}
+!
+enable secret 5 $1$mHxw$r2NSHqa8G/o/eVAmfAMJA/
+!
+username tory secret 5 $1$HodT$xRG78n5DETc27vsMnn1lR.
+aaa new-model
+!
+aaa authentication login default local
+!
+no ip domain-lookup
+ip domain-name clugydesigns.lab
+ip cef
+no ipv6 cef
+!
+vrf definition OOB-MGMT
+ !
+ address-family ipv4
+ exit-address-family
+!
+interface {{ interface }}
+ no switchport
+ no shutdown
+ vrf forward OOB-MGMT
+ ip address {{ ip }}
+!
+ip route vrf OOB-MGMT 0.0.0.0 0.0.0.0 172.168.99.1
+!
+crypto key generate rsa modulus 2048
+!
+ip ssh version 2
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr diffie-hellmen-group1-sha1
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr diffie-hellmen-group1-sha1
+ip ssh server algorithm authentication publickey
+ip ssh server algorithm publickey ssh-rsa
+!
+ip ssh pubkey-chain   
+  username dev   
+   key-hash ssh-rsa 4B5C97EC85B68C1BE2F573E4B9F9407F  
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+line aux 0
+!
+line vty 0 4
+ login authentication default
+ transport input ssh
+ privilege level 15
+!
+!
+end
