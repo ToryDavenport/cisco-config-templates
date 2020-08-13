@@ -14,7 +14,7 @@ hostname = data['Hostname:']
 
 for device in range(0,25):
 	os.system(f"touch ./configs/output/config_{hostname[device]}.txt")
-	file = open(f"./configs/output/config_{hostname[device]}.cfg", "w")
+	file = open(f"./configs/output/config_{hostname[device]}.txt", "w")
 	env = Environment(loader=file_loader)
 	template = env.get_template('./configs/GOLD_STANDARD.txt')
 	file.write(template.render(hostname=hostname[device], interface=interfaces[device], ip=ips[device]))
