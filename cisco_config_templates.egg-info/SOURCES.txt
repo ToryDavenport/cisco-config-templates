@@ -1,0 +1,7 @@
+README.rst
+setup.py
+cisco_config_templates/__init__.py
+cisco_config_templates.egg-info/PKG-INFO
+cisco_config_templates.egg-info/SOURCES.txt
+cisco_config_templates.egg-info/dependency_links.txt
+cisco_config_templates.egg-info/top_level.txt

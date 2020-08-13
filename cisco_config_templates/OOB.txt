@@ -1,0 +1,16 @@
+conf t
+!
+hostname {{ hostname }}
+!
+vrf def OOB-MGNT
+ address-fam ipv4
+ exit
+exit
+!
+interface {{ interface }}
+ no switchport
+ no shutdown
+ vrf forward OOB-MGMT
+ ip address {{ ip }}
+!
+ping vrf OOB-MGMT ip

@@ -1,0 +1,171 @@
+PING 172.16.99.1 (172.16.99.1) 56(84) bytes of data.
+64 bytes from 172.16.99.1: icmp_seq=1 ttl=64 time=0.078 ms
+64 bytes from 172.16.99.1: icmp_seq=2 ttl=64 time=0.087 ms
+64 bytes from 172.16.99.1: icmp_seq=3 ttl=64 time=0.075 ms
+64 bytes from 172.16.99.1: icmp_seq=4 ttl=64 time=0.068 ms
+
+--- 172.16.99.1 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3078ms
+rtt min/avg/max/mdev = 0.068/0.077/0.087/0.006 ms
+PING 172.16.99.2 (172.16.99.2) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.2 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3051ms
+pipe 4
+PING 172.16.99.3 (172.16.99.3) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.3 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3080ms
+pipe 4
+PING 172.16.99.4 (172.16.99.4) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.4 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3052ms
+pipe 4
+PING 172.16.99.5 (172.16.99.5) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.5 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3052ms
+pipe 4
+PING 172.16.99.6 (172.16.99.6) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.6 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3052ms
+pipe 4
+PING 172.16.99.7 (172.16.99.7) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.7 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3057ms
+pipe 4
+PING 172.16.99.8 (172.16.99.8) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.8 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3051ms
+pipe 4
+PING 172.16.99.9 (172.16.99.9) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.9 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3052ms
+pipe 4
+PING 172.16.99.10 (172.16.99.10) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.10 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3058ms
+pipe 4
+PING 172.16.99.11 (172.16.99.11) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.11 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3051ms
+pipe 4
+PING 172.16.99.12 (172.16.99.12) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.12 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3055ms
+pipe 3
+PING 172.16.99.13 (172.16.99.13) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.13 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3051ms
+pipe 4
+PING 172.16.99.14 (172.16.99.14) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.14 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3052ms
+pipe 4
+PING 172.16.99.15 (172.16.99.15) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.15 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3052ms
+pipe 4
+PING 172.16.99.16 (172.16.99.16) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.16 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3050ms
+pipe 4
+PING 172.16.99.17 (172.16.99.17) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.17 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3049ms
+pipe 4
+PING 172.16.99.18 (172.16.99.18) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.18 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3052ms
+pipe 4
+PING 172.16.99.19 (172.16.99.19) 56(84) bytes of data.
+From 172.16.99.1 icmp_seq=1 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=2 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=3 Destination Host Unreachable
+From 172.16.99.1 icmp_seq=4 Destination Host Unreachable
+
+--- 172.16.99.19 ping statistics ---
+4 packets transmitted, 0 received, +4 errors, 100% packet loss, time 3050ms
+pipe 4

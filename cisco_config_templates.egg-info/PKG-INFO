@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: cisco-config-templates
+Version: 0.1.0
+Summary: Generate Cisco IOS Configs!
+Home-page: UNKNOWN
+Author: Tory Davenport
+Author-email: Contact@torydavenport.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8,<4.0
