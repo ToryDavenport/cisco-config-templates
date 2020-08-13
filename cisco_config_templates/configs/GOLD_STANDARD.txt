@@ -1,5 +1,5 @@
 !
-hostname {{ hostname  }}
+hostname {{ hostname }}
 !
 enable secret 5 $1$mHxw$r2NSHqa8G/o/eVAmfAMJA/
 !
@@ -24,15 +24,19 @@ interface {{ interface }}
  vrf forward OOB-MGMT
  ip address {{ ip }}
 !
+ip route vrf OOB-MGMT 0.0.0.0 0.0.0.0 172.168.99.1
+!
 crypto key generate rsa modulus 2048
 !
 ip ssh version 2
 ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr diffie-hellmen-group1-sha1
 ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr diffie-hellmen-group1-sha1
+ip ssh server algorithm authentication publickey
+ip ssh server algorithm publickey ssh-rsa
 !
-ip ssh pubkey-chain
-  username dev
-   key-hash ssh-rsa 91A0C47435949F128FC35B93EF6ABAB9 
+ip ssh pubkey-chain   
+  username dev   
+   key-hash ssh-rsa 2CC38644758375B1CD0DC617A82683D6  
 !
 banner exec ^C
 **************************************************************************
@@ -69,8 +73,6 @@ line vty 0 4
  login authentication default
  transport input ssh
  privilege level 15
-
-
 !
 !
 end
