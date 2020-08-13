@@ -12,11 +12,11 @@ ips = data['IP:']
 hostname = data['Hostname:']
 
 
-for device in range(0,22):
+for device in range(0,25):
 	os.system(f"touch ./configs/output/config_{hostname[device]}.cfg")
 	file = open(f"./configs/output/config_{hostname[device]}.cfg", "w")
 	env = Environment(loader=file_loader)
-	template = env.get_template('./configs/base_config.txt')
+	template = env.get_template('./configs/Gold_Standard.txt')
 	file.write(template.render(hostname=hostname[device], interface=interfaces[device], ip=ips[device]))
 	file.close()
 
