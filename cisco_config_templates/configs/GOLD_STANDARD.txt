@@ -1,15 +1,15 @@
 !
 hostname {{ hostname }}
 !
-enable secret 5 $1$mHxw$r2NSHqa8G/o/eVAmfAMJA/
+enable secret 5 REDACTED
 !
-username tory secret 5 $1$HodT$xRG78n5DETc27vsMnn1lR.
+username tory secret 5 REDACTED
 aaa new-model
 !
 aaa authentication login default local
 !
 no ip domain-lookup
-ip domain-name clugydesigns.lab
+ip domain-name TORYDAVENPORT.lab
 ip cef
 no ipv6 cef
 !
@@ -36,7 +36,7 @@ ip ssh server algorithm publickey ssh-rsa
 !
 ip ssh pubkey-chain   
   username dev   
-   key-hash ssh-rsa 2CC38644758375B1CD0DC617A82683D6  
+   key-hash ssh-rsa REDACTED  
 !
 banner exec ^C
 **************************************************************************
